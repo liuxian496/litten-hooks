@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/liuxian496/litten-hooks/compare/v1.1.0...v1.2.0) (2024-05-09)
+
+
+### Features
+
+* focusControl添加onLabelMouseStateCheck ([7a21d3e](https://github.com/liuxian496/litten-hooks/commit/7a21d3eb125d2a95ef7973433298f1558bb74939))
+
+
+
 # [1.1.0](https://github.com/liuxian496/litten-hooks/compare/v1.0.0...v1.1.0) (2024-05-08)
 
 
