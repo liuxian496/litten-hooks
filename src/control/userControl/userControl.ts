@@ -1,26 +1,7 @@
 import { MutableRefObject, useEffect, useState } from "react";
 
-import { MouseState } from "../../global/enum";
 import { usePrevious } from "../../hooks/usePrevious";
 import { RelativeRect } from "./userControl.types";
-
-let littenLabelMouseState = MouseState.none;
-
-/**
- * 获取littenLabelMouseState
- * @returns
- */
-export function getLabelMouseState() {
-    return littenLabelMouseState;
-}
-
-/**
- * 设置littenLabelMouseState
- * @param state 待设置的MouseState {MouseState}
- */
-export function setLabelMouseState(state: MouseState) {
-    littenLabelMouseState = state;
-}
 
 /**
  * 鼠标按下时，获取鼠标相对于指定的DOM节点的相对位置

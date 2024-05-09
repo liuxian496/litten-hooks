@@ -17,4 +17,5 @@ export interface FocusControlProps<T> extends UserControlProps {
      * @returns void
      */
     onBlur?: (e: FocusEvent<T>) => void;
+    onLabelMouseStateCheck?: () => boolean;
 }

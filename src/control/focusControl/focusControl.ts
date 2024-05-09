@@ -1,25 +1,28 @@
 import { useState, FocusEvent } from "react";
+import isFunction from "lodash/isFunction";
+
 import { FocusControlProps } from "./focusControl.types";
-import { FocusState, MouseState } from "../../global/enum";
-import { getLabelMouseState, setLabelMouseState } from "../userControl/userControl";
+import { FocusState } from "../../global/enum";
 
 /**
  * 获取用户控件的focused属性对应的值，以及onFocus和onBlur的事件处理函数
  * @param props 用户控件属性
  */
 export function useFocused<T>(props: FocusControlProps<T>) {
-    const { onFocus, onBlur } = props;
+    const { onFocus, onBlur, onLabelMouseStateCheck } = props;
 
     const [focused, setFocused] = useState(false);
 
     function handleFocus(e: FocusEvent<T>) {
-        if (getLabelMouseState() === MouseState.none) {
+        if (
+            isFunction(onLabelMouseStateCheck) &&
+            onLabelMouseStateCheck() === true
+        ) {
+             // 避免点击label时，控件显示焦点样式。
             setFocused(true);
         } else {
-            // 避免点击label时，控件显示焦点样式。
-            setLabelMouseState(MouseState.none);
+            setFocused(true);
         }
-        
 
         onFocus?.(e);
     }
@@ -32,7 +35,7 @@ export function useFocused<T>(props: FocusControlProps<T>) {
     return [focused, handleFocus, handleBlur] as [
         boolean,
         (e: FocusEvent<T>) => void,
-        (e: FocusEvent<T>) => void
+        (e: FocusEvent<T>) => void,
     ];
 }
 

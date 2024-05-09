@@ -1,5 +1,1 @@
-export {
-  getLabelMouseState,
-  setLabelMouseState,
-  useRelativePosition,
-} from "../src/control/userControl/userControl";
+export { useRelativePosition } from "../src/control/userControl/userControl";

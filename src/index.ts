@@ -24,11 +24,7 @@ export {
 } from "../src/control/focusControl/focusControl";
 
 // userControl
-export {
-    getLabelMouseState,
-    setLabelMouseState,
-    useRelativePosition,
-} from "../src/control/userControl/userControl";
+export { useRelativePosition } from "../src/control/userControl/userControl";
 
 // hooks
 export { usePrevious } from "../src/hooks/usePrevious";
