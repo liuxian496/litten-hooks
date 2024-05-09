@@ -3,7 +3,6 @@ import isFunction from "lodash/isFunction";
 
 import { FocusControlProps } from "./focusControl.types";
 import { FocusState } from "../../global/enum";
-
 /**
  * 获取用户控件的focused属性对应的值，以及onFocus和onBlur的事件处理函数
  * @param props 用户控件属性
@@ -14,14 +13,10 @@ export function useFocused<T>(props: FocusControlProps<T>) {
     const [focused, setFocused] = useState(false);
 
     function handleFocus(e: FocusEvent<T>) {
-        if (
-            isFunction(onLabelMouseStateCheck) &&
-            onLabelMouseStateCheck() === true
-        ) {
-             // 避免点击label时，控件显示焦点样式。
+        if (!isFunction(onLabelMouseStateCheck)) {
             setFocused(true);
         } else {
-            setFocused(true);
+            setFocused(onLabelMouseStateCheck());
         }
 
         onFocus?.(e);

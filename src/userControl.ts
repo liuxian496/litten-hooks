@@ -1,1 +1,1 @@
-export { useRelativePosition } from "../src/control/userControl/userControl";
+export { useRelativePosition } from "./control/userControl/userControl";

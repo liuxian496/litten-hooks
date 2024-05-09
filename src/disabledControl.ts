@@ -1,1 +1,1 @@
-export { useDisabled } from "../src/control/disabledControl/disabledControl";
+export { useDisabled } from "./control/disabledControl/disabledControl";

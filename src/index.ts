@@ -5,26 +5,26 @@ export * from "./global/enum";
 export {
     setCheckedByGroupValue,
     useCurrentChecked,
-} from "../src/control/checkedControl/checkedControl";
+} from "./control/checkedControl/checkedControl";
 
 // contentControl
 export {
     getCurrentValue,
     getDefaultValueByDisplayName,
     useCurrentValue,
-} from "../src/control/contentControl/contentControl";
+} from "./control/contentControl/contentControl";
 
 // disabledControl
-export { useDisabled } from "../src/control/disabledControl/disabledControl";
+export { useDisabled } from "./control/disabledControl/disabledControl";
 
 // focusControl
 export {
     getStateByFocused,
     useFocused,
-} from "../src/control/focusControl/focusControl";
+} from "./control/focusControl/focusControl";
 
 // userControl
-export { useRelativePosition } from "../src/control/userControl/userControl";
+export { useRelativePosition } from "./control/userControl/userControl";
 
 // hooks
-export { usePrevious } from "../src/hooks/usePrevious";
+export { usePrevious } from "./hooks/usePrevious";
