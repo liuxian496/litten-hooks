@@ -5,7 +5,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/liuxian496/litten-hooks)
 
 
-<p>litten-hooks是一个基于react的工具库，提供开发「用户组件库」时需要的hooks</p>
+<p>litten-hooks是一个基于react的工具库，提供开发「控件库」时需要的hooks</p>
 
 <p>
 主页
