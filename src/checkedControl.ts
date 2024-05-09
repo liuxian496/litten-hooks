@@ -1,5 +1,5 @@
 export {
   setCheckedByGroupValue,
   useCurrentChecked,
-} from "../src/control/checkedControl/checkedControl";
+} from "./control/checkedControl/checkedControl";
 

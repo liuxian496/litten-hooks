@@ -1,1 +1,1 @@
-export { usePrevious } from "../src/hooks/usePrevious";
+export { usePrevious } from "./hooks/usePrevious";
