@@ -13,6 +13,12 @@
 
 [https://liuxian496.github.io/litten-hooks/](https://liuxian496.github.io/litten-hooks/)
 
+## 依赖
+<code>react</code>
+<code>react-dom</code>
+<code>loadsh</code>
+上述依赖，打包时不包含，需要使用的项目自行引入。
+
 ## 如果你想请我喝一咖啡（Buy Me a Coffee）
 <img src=".\\public\\wechat.jpg" height="360">
 <img src=".\\public\\alipay.jpg" height="360">
