@@ -17,14 +17,19 @@ export default defineConfig({
                 enum: "src/enum.ts",
                 focusControl: "src/focusControl.ts",
                 userControl: "src/userControl.ts",
-                usePrevious:"src/usePrevious.ts"
+                usePrevious: "src/usePrevious.ts",
             },
             name: "cyndi",
             fileName: "index",
         },
         outDir: "dist",
         rollupOptions: {
-            external: ["react", "react-dom", "react/jsx-runtime"],
+            external: [
+                "react",
+                "react-dom",
+                "react/jsx-runtime",
+                "lodash/isFunction",
+            ],
             output: [
                 {
                     manualChunks: (id: string) => {
@@ -46,6 +51,6 @@ export default defineConfig({
     plugins: [
         react(),
         dts(),
-        // visualizer(),
+        // visualizer()
     ],
 });
