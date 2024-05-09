@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/liuxian496/litten-hooks/compare/v1.2.1...v1.3.0) (2024-05-09)
+
+
+### Bug Fixes
+
+* 修改export路径，解决打包好类型文件对应失败的问题 ([117c6a8](https://github.com/liuxian496/litten-hooks/commit/117c6a82d291246a86e96d221054c7957d5ba359))
+
+
+### Features
+
+* 修改onLabelMouseStateCheck的处理逻辑，指定onLabelMouseStateCheck，是否设置focused，由函数的返回值决定。 ([408bdeb](https://github.com/liuxian496/litten-hooks/commit/408bdebd043d90eefaa2fb1034e9829033fe0a0c))
+
+
+
 ## [1.2.1](https://github.com/liuxian496/litten-hooks/compare/v1.2.0...v1.2.1) (2024-05-09)
 
 
