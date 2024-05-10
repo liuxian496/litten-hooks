@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/liuxian496/litten-hooks/compare/v1.3.0...v1.4.0) (2024-05-10)
+
+
+### Features
+
+* 添加LittenObjectValue ([5a5cb74](https://github.com/liuxian496/litten-hooks/commit/5a5cb748541edcb1462ec1640db6f79a8528e2c1))
+
+
+
 # [1.3.0](https://github.com/liuxian496/litten-hooks/compare/v1.2.1...v1.3.0) (2024-05-09)
 
 
