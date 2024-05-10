@@ -26,12 +26,22 @@ export type StyleValue<T> = T;
 
 export type ResponsiveStyleValue<T> = T | { [key: string]: T | null };
 
+/**
+ * 控件返回值
+ */
 export type LittenValue =
     | string
     | ReadonlyArray<string>
     | number
     | boolean
     | undefined;
+
+/**
+ * 控件返回对象
+ */
+export interface LittenObjectValue {
+    [index: string]: LittenValue;
+}
 
 /**
  * 极值
