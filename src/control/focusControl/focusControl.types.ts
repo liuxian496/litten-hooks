@@ -2,7 +2,7 @@ import { FocusEvent } from "react";
 
 import { UserControlProps } from "../userControl/userControl.types";
 
-export interface FocusControlProps<T> extends UserControlProps {
+export interface FocusControlProps<T = Element> extends UserControlProps {
     /**
      * 设置元素是否可以聚焦
      */
