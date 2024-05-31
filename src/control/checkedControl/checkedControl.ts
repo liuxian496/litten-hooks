@@ -99,7 +99,7 @@ export function setCheckedByGroupValue(
     });
 }
 
-function useCheckedGroup<T>(
+function useCheckedGroup<T = Element>(
     props: CheckedControlProps<T>,
     setChecked: Dispatch<SetStateAction<boolean | undefined>>
 ) {
@@ -125,7 +125,7 @@ function useCheckedGroup<T>(
  * 控制控件的选中状态，并触发对应的change事件
  * @param props 控件属性 CheckedControlProps
  */
-export function useCurrentChecked<T>(props: CheckedControlProps<T>) {
+export function useCurrentChecked<T = Element>(props: CheckedControlProps<T>) {
     const { checked, defaultChecked, controlType, onChange, value } = props;
 
     const prevChecked = usePrevious(checked);

@@ -26,6 +26,8 @@ export type StyleValue<T> = T;
 
 export type ResponsiveStyleValue<T> = T | { [key: string]: T | null };
 
+export type SelectedValue = string | ReadonlyArray<string>;
+
 /**
  * 控件返回值
  */
@@ -41,6 +43,20 @@ export type LittenValue =
  */
 export interface LittenObjectValue {
     [index: string]: LittenValue;
+}
+
+/**
+ * 集合控件的值
+ */
+export type LittenItems = LittenItem[];
+
+/**
+ * 集合控件每一项的值
+ */
+export interface LittenItem {
+    value?: string;
+    label?: string;
+    disabled?: boolean;
 }
 
 /**

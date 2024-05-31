@@ -8,6 +8,7 @@ export default defineConfig({
     build: {
         copyPublicDir: false,
         cssCodeSplit: true,
+        // sourcemap:true,
         lib: {
             entry: {
                 index: "src/index.ts",
@@ -18,8 +19,9 @@ export default defineConfig({
                 focusControl: "src/focusControl.ts",
                 userControl: "src/userControl.ts",
                 usePrevious: "src/usePrevious.ts",
+                useVirtualFocus: "src/useVirtualFocus.ts",
             },
-            name: "cyndi",
+            name: "littenHooks",
             fileName: "index",
         },
         outDir: "dist",

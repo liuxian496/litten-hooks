@@ -23,6 +23,12 @@ export {
     useFocused,
 } from "./control/focusControl/focusControl";
 
+export {
+    getNextListFocusIndex,
+    getLastSelectedIndex,
+    useVirtualFocus,
+} from "./control/focusControl/useVirtualFocus";
+
 // userControl
 export { useRelativePosition } from "./control/userControl/userControl";
 

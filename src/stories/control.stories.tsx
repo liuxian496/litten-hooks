@@ -5,6 +5,7 @@ import { UseCurrentValueTest } from "../test/control/useCurrentValueTest";
 import { UseDisabledTest } from "../test/control/useDisabledTest";
 import { UseFocusedTest } from "../test/control/useFocusedTest";
 import { UseRelativePositionTest } from "../test/control/useRelativePositionTest";
+import { UseVirtualFocusTest } from "../test/control/useVirtualFocusTest";
 
 export default {
     title: "Example/Control",
@@ -36,3 +37,8 @@ export const UseRelativePosition = {
     name: "useRelativePosition",
     ...UseRelativePositionTest,
 };
+
+export const UseVirtualFocus = {
+    name: "useVirtualFocusTest",
+    ...UseVirtualFocusTest
+}

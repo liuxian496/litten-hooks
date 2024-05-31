@@ -4,7 +4,7 @@ import { ContentControlProps } from "../contentControl/contentControl.types";
 import { FocusControlProps } from "../focusControl/focusControl.types";
 import { DisabledControlProps } from "../disabledControl/disabledControl.types";
 
-export interface CheckedControlProps<T>
+export interface CheckedControlProps<T = Element>
     extends FocusControlProps<T>,
         DisabledControlProps,
         ContentControlProps<T, string> {
