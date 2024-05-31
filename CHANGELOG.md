@@ -1,3 +1,13 @@
+# [1.5.0](https://github.com/liuxian496/litten-hooks/compare/v1.4.0...v1.5.0) (2024-05-31)
+
+
+### Features
+
+* 添加LittenListChangeEvent ([7655912](https://github.com/liuxian496/litten-hooks/commit/76559122d2ef503581dffae902a768f5d41c2814))
+* 添加useVirtualFocus ([05727eb](https://github.com/liuxian496/litten-hooks/commit/05727eba8f37a7fdd29e40daf20f5f0059e1b5f8))
+
+
+
 # [1.4.0](https://github.com/liuxian496/litten-hooks/compare/v1.3.0...v1.4.0) (2024-05-10)
 
 
