@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 import { ControlType } from "../../global/enum";
-import { LittenValue } from "../userControl/userControl.types";
+import { LittenValue, SelectedValue } from "../userControl/userControl.types";
 
 export type TextFieldValue =
     | string
@@ -40,6 +40,11 @@ export type LittenCheckedChangeEvent = LittenEvent<
 export type LittenNumberChangeEvent = LittenEvent<
     ChangeEvent<HTMLInputElement>,
     number
+>;
+
+export type LittenListChangeEvent = LittenEvent<
+    ChangeEvent<HTMLUListElement>,
+    SelectedValue
 >;
 
 export type LittenDisabledChangeEvent = LittenEvent<
