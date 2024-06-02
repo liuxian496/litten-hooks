@@ -116,7 +116,7 @@ export function getLastSelectedIndex(
 export const useVirtualFocus = (items: LittenItems) => {
     const [focusIndex, setFocusIndex] = useState<number>(-1);
 
-    const [focusValue, setFocusValue] = useState<string | number | undefined>();
+    const [focusValue, setFocusValue] = useState<string | undefined>();
 
     useEffect(() => {
         setFocusIndex(items.findIndex((item) => item.value === focusValue));
@@ -124,7 +124,7 @@ export const useVirtualFocus = (items: LittenItems) => {
 
     return [focusIndex, focusValue, setFocusValue] as [
         number,
-        string | number | undefined,
-        React.Dispatch<React.SetStateAction<string | number | undefined>>,
+        string | undefined,
+        React.Dispatch<React.SetStateAction<string | undefined>>,
     ];
 };

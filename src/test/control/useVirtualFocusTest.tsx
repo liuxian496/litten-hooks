@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { userEvent, within, expect } from "@storybook/test";
 
@@ -204,27 +204,24 @@ export const UseVirtualFocusTest: UtilStory = {
             }
         );
 
-        await step(
-            'Test getLastSelectedIndex.',
-            async () => {
-                await expect(getLastSelectedIndex(listItems, "k")).toEqual(10);
+        await step("Test getLastSelectedIndex.", async () => {
+            await expect(getLastSelectedIndex(listItems, "k")).toEqual(10);
 
-                await expect(
-                    getLastSelectedIndex(listItems, undefined)
-                ).toEqual(-1);
+            await expect(getLastSelectedIndex(listItems, undefined)).toEqual(
+                -1
+            );
 
-                await expect(
-                    getLastSelectedIndex(listItems, ["k", "a", "c"])
-                ).toEqual(-1);
+            await expect(
+                getLastSelectedIndex(listItems, ["k", "a", "c"])
+            ).toEqual(-1);
 
-                await expect(
-                    getLastSelectedIndex(listItems, ["k", "a", "c"], true)
-                ).toEqual(2);
+            await expect(
+                getLastSelectedIndex(listItems, ["k", "a", "c"], true)
+            ).toEqual(2);
 
-                await expect(
-                    getLastSelectedIndex(listItems, ["c", "a", "k"], true)
-                ).toEqual(10);
-            }
-        );
+            await expect(
+                getLastSelectedIndex(listItems, ["c", "a", "k"], true)
+            ).toEqual(10);
+        });
     },
 };

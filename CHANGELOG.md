@@ -1,3 +1,7 @@
+## [1.5.1](https://github.com/liuxian496/litten-hooks/compare/v1.5.0...v1.5.1) (2024-06-02)
+
+
+
 # [1.5.0](https://github.com/liuxian496/litten-hooks/compare/v1.4.0...v1.5.0) (2024-05-31)
 
 
