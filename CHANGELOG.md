@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/liuxian496/litten-hooks/compare/v1.5.1...v1.6.0) (2024-06-13)
+
+
+### Features
+
+* 添加Listbox和ListItem对应的ControlType ([3558349](https://github.com/liuxian496/litten-hooks/commit/3558349e892e2e7bad02e4515fe8fc5e24719031))
+
+
+
 ## [1.5.1](https://github.com/liuxian496/litten-hooks/compare/v1.5.0...v1.5.1) (2024-06-02)
 
 
