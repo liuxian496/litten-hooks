@@ -2,8 +2,8 @@
  * 可用状态
  */
 export enum EnableState {
-  disabled = "disabled",
-  enabled = "enabled",
+    disabled = "disabled",
+    enabled = "enabled",
 }
 
 /**
@@ -36,6 +36,8 @@ export enum ControlType {
     FormControl = "FormControl",
     FormLabel = "FormLabel",
     IconButton = "IconButton",
+    Listbox = "Listbox",
+    ListItem = "ListItem",
     Loading = "Loading",
     Radio = "Radio",
     Ripple = "Ripple",
