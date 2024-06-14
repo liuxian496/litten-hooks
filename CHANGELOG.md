@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/liuxian496/litten-hooks/compare/v1.6.0...v1.7.0) (2024-06-14)
+
+
+### Features
+
+* 添加ListBox控件对应的ControlType ([d4411cb](https://github.com/liuxian496/litten-hooks/commit/d4411cb7911571ef3c2bca321b7869636a8cbb37))
+
+
+
 # [1.6.0](https://github.com/liuxian496/litten-hooks/compare/v1.5.1...v1.6.0) (2024-06-13)
 
 
