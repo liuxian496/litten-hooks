@@ -37,6 +37,7 @@ export enum ControlType {
     FormLabel = "FormLabel",
     IconButton = "IconButton",
     Listbox = "Listbox",
+    ListGroup = "ListGroup",
     ListItem = "ListItem",
     Loading = "Loading",
     Radio = "Radio",
