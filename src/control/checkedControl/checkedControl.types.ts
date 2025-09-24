@@ -1,13 +1,13 @@
 import { Dispatch, SetStateAction } from "react";
 import { ControlType } from "../../global/enum";
 import { ContentControlProps } from "../contentControl/contentControl.types";
-import { FocusControlProps } from "../focusControl/focusControl.types";
 import { DisabledControlProps } from "../disabledControl/disabledControl.types";
+import { FocusControlProps } from "../focusControl/focusControl.types";
 
 export interface CheckedControlProps<T = Element>
     extends FocusControlProps<T>,
         DisabledControlProps,
-        ContentControlProps<T, string> {
+        ContentControlProps<T, boolean> {
     /**
      * 设置一个值，该值表示是否勾选。true，代表勾选。
      */
