@@ -1,13 +1,3 @@
-## [1.7.1](https://github.com/liuxian496/litten-hooks/compare/v1.7.0...v1.7.1) (2025-10-11)
-
-
-### Bug Fixes
-
-* 修复从undefined变化到布尔值时，会触发CheckedControl组件onChange事件的问题 ([e5bda25](https://github.com/liuxian496/litten-hooks/commit/e5bda25a66644d791b0b7da175c679561645d4d5))
-* 修改CheckedControlProps泛型参数设置错误的问题 ([02516b7](https://github.com/liuxian496/litten-hooks/commit/02516b738f8d8483bd8acedd94c03d420f81dbef))
-
-
-
 # [1.7.0](https://github.com/liuxian496/litten-hooks/compare/v1.6.0...v1.7.0) (2024-06-14)
 
 
