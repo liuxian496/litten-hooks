@@ -1,21 +1,21 @@
 import {
-    ChangeEvent,
+    useState,
+    useEffect,
     Dispatch,
     SetStateAction,
-    useCallback,
-    useEffect,
+    ChangeEvent,
     useId,
-    useState,
+    useCallback,
 } from "react";
 
-import { ControlType } from "../../global/enum";
-import { usePrevious } from "../../hooks/usePrevious";
 import { getCurrentValue } from "../contentControl/contentControl";
 import {
     CheckedControlGroup,
     CheckedControlProps,
     LittenCheckedGroups,
 } from "./checkedControl.types";
+import { ControlType } from "../../global/enum";
+import { usePrevious } from "../../hooks/usePrevious";
 
 // const LittenCheckboxGroups = {} as LittenCheckedGroups;
 const LittenRadioGroups = {} as LittenCheckedGroups;
@@ -147,7 +147,7 @@ export function useCurrentChecked<T = Element>(props: CheckedControlProps<T>) {
     }, [prevChecked, checked, defaultChecked]);
 
     useEffect(() => {
-        if (previous !== current && previous !== undefined) {
+        if (previous !== current) {
             onChange?.({
                 e: originalEvent,
                 value,
