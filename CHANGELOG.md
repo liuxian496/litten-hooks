@@ -1,3 +1,12 @@
+## [2.0.1-beta.0](https://github.com/liuxian496/litten-hooks/compare/v2.0.0...v2.0.1-beta.0) (2026-02-09)
+
+
+### Features
+
+* 支持新的受控和非受控处理逻辑 ([54d2a4d](https://github.com/liuxian496/litten-hooks/commit/54d2a4d140e516c6ce28a5250904de9b32678712))
+
+
+
 # [2.0.0](https://github.com/liuxian496/litten-hooks/compare/v1.7.0...v2.0.0) (2025-10-12)
 
 
