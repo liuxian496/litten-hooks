@@ -1,6 +1,6 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
-import { userEvent, within, expect } from "@storybook/test";
+import { expect, userEvent, within } from "@storybook/test";
 import { UtilStory } from "../../stories/hooks.stories";
 
 import { Button } from "litten/dist/button";
@@ -14,7 +14,7 @@ import { ControlType } from "../../global/enum";
 
 const Test = () => {
     const [value, setValue] = useState<string | undefined>(undefined);
-    const [currentValue, setCurrentValue, setOriginalEvent] = useCurrentValue<
+    const [currentValue, setCurrentValue] = useCurrentValue<
         HTMLInputElement,
         TextFieldValue
     >({
@@ -24,7 +24,6 @@ const Test = () => {
     });
 
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
-        setOriginalEvent(e);
         setCurrentValue(e.target.value);
     }
 
@@ -60,7 +59,7 @@ export const UseCurrentValueTest: UtilStory = {
             async () => {
                 await userEvent.type(myInput, "2233");
                 await expect(canvas.getByText("msg:2233")).toBeInTheDocument();
-            }
+            },
         );
 
         await step(
@@ -68,21 +67,24 @@ export const UseCurrentValueTest: UtilStory = {
             async () => {
                 await userEvent.clear(myInput);
                 await expect(canvas.getByText("msg:")).toBeInTheDocument();
-            }
+            },
         );
 
-        await step('Click "Change Value To Tom" button, then "msg:" to be in the document.', async () => {
-            await userEvent.click(changeBtu);
-            await expect(canvas.getByText("msg:Tom")).toBeInTheDocument();
-        });
+        await step(
+            'Click "Change Value To Tom" button, then "msg:" to be in the document.',
+            async () => {
+                await userEvent.click(changeBtu);
+                await expect(canvas.getByText("msg:Tom")).toBeInTheDocument();
+            },
+        );
 
         await step(
             "getDefaultValueByDisplayName(ControlType.Slider) is 50.",
             async () => {
                 await expect(
-                    getDefaultValueByDisplayName(ControlType.Slider)
+                    getDefaultValueByDisplayName(ControlType.Slider),
                 ).toBe(50);
-            }
+            },
         );
     },
 };
