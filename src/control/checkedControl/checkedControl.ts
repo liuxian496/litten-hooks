@@ -37,7 +37,7 @@ function getGroupsByUserControlType(type?: ControlType) {
 
 function addCheckedGroup(
     props: CheckedControlGroup,
-    setChecked: Dispatch<SetStateAction<boolean | undefined>>
+    setChecked: Dispatch<SetStateAction<boolean | undefined>>,
 ) {
     const { name, value, uuid, controlType } = props;
 
@@ -87,7 +87,7 @@ function updateCheckedGroup(props: CheckedControlGroup) {
 export function setCheckedByGroupValue(
     name: string,
     controlType: ControlType,
-    value: string
+    value: string,
 ) {
     const groups = getGroupsByUserControlType(controlType);
     const group = groups[name];
@@ -101,7 +101,7 @@ export function setCheckedByGroupValue(
 
 function useCheckedGroup<T = Element>(
     props: CheckedControlProps<T>,
-    setChecked: Dispatch<SetStateAction<boolean | undefined>>
+    setChecked: Dispatch<SetStateAction<boolean | undefined>>,
 ) {
     const { name, controlType, value } = props;
 
@@ -131,7 +131,7 @@ export function useCurrentChecked<T = Element>(props: CheckedControlProps<T>) {
     const prevChecked = usePrevious(checked);
 
     const [current, setCurrent] = useState<boolean | undefined>(
-        getCurrentValue<boolean>(checked, defaultChecked)
+        getCurrentValue<boolean>(checked, defaultChecked),
     );
     const previous = usePrevious(current);
 
