@@ -1,3 +1,12 @@
+## [2.0.1-beta.1](https://github.com/liuxian496/litten-hooks/compare/v2.0.1-beta.0...v2.0.1-beta.1) (2026-02-13)
+
+
+### Features
+
+* checked control支持新的受控、非受控模式 ([6ac66c4](https://github.com/liuxian496/litten-hooks/commit/6ac66c43d7056340f4b5ad288c92f9d8bb5c7c8a))
+
+
+
 ## [2.0.1-beta.0](https://github.com/liuxian496/litten-hooks/compare/v2.0.0...v2.0.1-beta.0) (2026-02-09)
 
 
