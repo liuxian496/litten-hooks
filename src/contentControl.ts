@@ -1,5 +1,4 @@
 export {
-  getCurrentValue,
   getDefaultValueByDisplayName,
   useCurrentValue,
-} from "./control/contentControl/contentControl";
+} from './control/contentControl/contentControl'
